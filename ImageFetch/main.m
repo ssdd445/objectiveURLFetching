@@ -24,6 +24,9 @@ int main(int argc,char *argv[])
             return 1;
         }
         NSLog(@"Success");
+        
+        NSData *data2 = [NSData dataWithContentsOfFile:@"/Users/saudwaqar/Desktop/C/newFile.png"];
+        NSLog(@"The file read from the disk has %lu bytes",(unsigned long)[data2 length]);
     }
     return 0;
 }
